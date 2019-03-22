@@ -5,7 +5,7 @@ const Project = require('../data/helpers/projectModel');
 
 routes.use(express.json());
 
-routes.get('/projects', (req, res) => {
+routes.get('/', (req, res) => {
     Project.get()
     .then(data => {
     res.status(200).json(data);
@@ -34,7 +34,7 @@ routes.get('/projects/:id', (req, res) => {
     })
 })
 
-outes.post('/projects/', (req, res) => {
+routes.post('/projects/', (req, res) => {
     const { name, description } = req.body;
     if (!name || !description) {
     res.status(400).json({ 

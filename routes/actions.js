@@ -4,7 +4,7 @@ const Action = require('../data/helpers/actionModel');
 
 routes.use(express.json());
 
-routes.get('/actions', (req, res) => {
+routes.get('/', (req, res) => {
     Action.get()
     .then(data => {
         res.status(200).json(data);
