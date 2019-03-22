@@ -1,6 +1,5 @@
 const express = require('express');
 const routes = express.Router();
-const Action = require('../data/helpers/actionModel');
 const Project = require('../data/helpers/projectModel');
 
 routes.use(express.json());

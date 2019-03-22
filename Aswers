@@ -1,0 +1,14 @@
+Mention two parts of Express that you learned about this week.
+There are 2000 moving arts what do you mean. Routers and idk.
+
+Describe Middleware?
+A function that takes place between when the data is called from the server to when it get to the user
+it can do any number of things and whatever you want really.
+
+Describe a Resource?
+
+What can the API return to help clients know if a request was successful?
+Status messages. 200(OK) or 202(Accepted)
+
+How can we partition our application into sub-applications?
+
